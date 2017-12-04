@@ -1,0 +1,72 @@
+
+#left-content{
+	position: fixed;
+	float: left;
+  width: 50%;
+  top: 7vh;
+  padding-top: 2vh;
+  height: 93vh;
+	cursor: text;
+	box-shadow: 1px 10px 5px rgba(22,13,15,1);
+	z-index: 2;
+}
+
+#code-content{
+	font-size: 18px;
+	display: block;
+	width:100%;
+	font-family: 'Inconsolata';
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#row-counter{
+	display: block;
+	width: 30px;
+	float: left;
+	padding-left: 6px;
+	border-right: 1px solid #333;
+}
+.row-count-number{
+	color: rgba(70,157,116, 0.7);
+	align: right;
+}
+
+#code{
+	position: relative;
+	display: block;
+	width:70%;
+	float: left;
+	margin-left: 20px;
+
+}
+
+.save-button{
+	float: left;
+	background: rgba(0,0,0,0);
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.save-button:hover{
+  transition: color .35s;
+	color: rgb(166, 186, 194);
+}
+
+.comment{	color: rgb(150, 152, 150); }
+.blue{color: rgb(86, 156, 214); }
+.red{color: rgb(143, 77, 78); }
+.orange{color: rgb(214, 157, 133); }
+.white{color: rgb(200, 200, 191); }
+.green{color: rgb(181,189,104); }
+.cyan{color: rgb(70,177,136); }
+
+
+
+@media only screen and (max-width: 1026px) {
+  #left-content {
+      display: none;
+  }
+}

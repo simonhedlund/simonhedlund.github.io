@@ -1,0 +1,241 @@
+#right-content{
+	overflow: auto;
+	position: relative;
+  margin-left: 50%;
+  top:0px;
+  height: 100vh;
+}
+
+/* 800 x 450 */
+.right-content-cell{
+	display: flex;
+	float:left;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: center;
+	background-size: cover;
+	background-position: center center;
+  background-repeat: no-repeat;
+	color: white;
+	width: 50%;
+	height: 33.3333vh;
+	overflow: hidden;
+}
+
+
+.inner-cell{
+	background: rgba(109,101,103,.3);
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+  height: 100%;
+	z-index: 1;
+	transition: background .15s;
+	border: 0px;
+}
+
+.inner-cell:hover {
+		background: rgba(250,141,63,.6);
+		cursor: pointer;
+}
+
+.inner-cell:focus {outline:0;}
+
+
+.inner-cell-text{
+	color: rgba(230,240,250,1);
+	font-size: 3.5vh;
+	font-family: 'Bungee Inline';
+	font-family: 'La Belle Aurore';
+	font-family: 'Fugaz One';
+}
+
+
+#cell-giveblood{background-image: url("../img/giveblood.jpg");}
+#cell-sphsimulation{background-image: url("../img/vattenoverhuvudet.jpg");}
+#cell-thelake{background-image: url("../img/theLake.jpg");}
+#cell-webocean{background-image: url("../img/dispvatten.jpg");}
+#cell-temojano{background-image: url("../img/temojano.jpg");}
+#cell-clothsimulation{background-image: url("../img/cloth.jpg");}
+#cell-hackforsweden{background-image: url("../img/hack4swe.jpg");}
+#cell-galaxygoose{background-image: url("../img/galaxygoose.jpg");}
+#cell-particlewaterweb{background-image: url("../img/sphweb.jpg");}
+#cell-lookingforhost{background-image: url("../img/lookingforhost.jpg");}
+#cell-robsvengeance{background-image: url("../img/robsvengeance.jpg");}
+#cell-webclock{background-image: url("../img/webclock.jpg");}
+#cell-fireworks{background-image: url("../img/fireworks.jpg");}
+#cell-pathfinder{background-image: url("../img/pathfinder.jpg");}
+
+#reelvideo{
+	margin-top: 25vh;
+	width: 100%;
+	height: 45vh;
+  background-image: url('../img/loader2.gif');
+  border: 3px;
+  background-size: 10vh;
+	background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#phone{
+	display: block;
+  width: 30vh;
+	height:50vh;
+  align-items: stretch;
+	align-content: stretch;
+  background-repeat: no-repeat;
+	color: black;
+	margin-top: 25vh;
+	margin-left: auto;
+	margin-right: auto;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateX(0deg) rotateY(0deg);
+	-webkit-backface-visibility: hidden; /* Prevent flicker */
+	backface-visibility: hidden;
+	text-align: center;
+}
+
+.phone-layer{
+	position: absolute;
+	width:100%;
+	height:100%;
+	border-radius: 15px;
+	z-index: 0;
+}
+
+#phone-layer-1{
+	transform: translateZ(0px) scale(1.2);
+	background: rgba(22,23,25,1);
+}
+
+#phone-layer-3{
+	transform: translateZ(30px) scale(1);
+	background: linear-gradient(135deg, rgba(255,255,255,.1) 0%,rgba(255,255,255,0.16) 39%,rgba(255,255,255,0.07) 41%,rgba(255,255,255,0) 51%,rgba(0,0,0,.3) 100%);
+	z-index: 1;
+	user-select: none;
+}
+
+#phone-layer-2{
+	transform: translateZ(60px) translateY(-10px) scale(.8);
+	margin-bottom: 4	0px;
+	z-index: 1;
+}
+
+
+
+.phone-cell{
+	width: 50%;
+  height: 32%;
+	float:left;
+	background-color: rgba(0,0,0,0);
+	font-family: 'Roboto';
+	font-size: 20px;
+	text-align: center;
+	padding: 2vh;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+
+.phone-button{
+
+  
+  width: 100%;
+  height: 80%;
+	float: left;
+	border-radius: 100%;
+	border: 0px;
+	transform: perspective(600px) rotateX(0deg) rotateY(0deg);
+	transition: transform .1s;
+	background-size: 100% 100%;
+	filter: grayscale(0.5);
+}
+
+.phone-button-inner:focus {outline:0;}
+
+.phone-button-inner{
+	width: 100%;
+  height: 100%;
+	border-radius: 100%;
+	border: 0px;
+	color: rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+	transition: background, border .2s;
+}
+
+.phone-button-inner:hover{
+	background-color: rgba(0,0,0,.1);
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+.phone-button-inner::focus {outline:none;}
+.phone-button-inner::-moz-focus-inner {
+  border: 0;
+}
+
+.phone-icon{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#phone-icon-github{
+	background-image: url("../img/phone-icons/github.jpg");
+}
+#phone-icon-linkedin{
+	background-image: url("../img/phone-icons/linkedin.jpg");
+}
+#phone-icon-facebook{
+	background-image: url("../img/phone-icons/facebook.jpg");
+}
+#phone-icon-instagram{
+	background-image: url("../img/phone-icons/instagram.jpg");
+}
+#phone-icon-soundcloud{
+	background-image: url("../img/phone-icons/soundcloud.jpg");
+}
+#phone-icon-spotify{
+	background-image: url("../img/phone-icons/spotify.jpg");
+}
+
+.phone-text{
+	display: block;
+	color: #aaa;
+	font-family: 'Roboto';
+	font-size: 2vh;
+	align-text: center;
+	margin-left: 4vh;
+/*	-webkit-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	user-select: all;          */
+}
+
+#CV{
+	width: 100%;
+	height: 99vh;
+	margin-left: 0%;
+	margin-top: 0vh;
+	border: 3px;
+	background-size: cover;
+	background: rgba(52,53,55,1);
+	opacity: 0.9;
+	overflow: hidden;
+
+}
+
+
+@media only screen and (max-width: 1026px) {
+  #right-content {
+      margin-left: 0px;
+      top: 7vh;
+      height: 93%;
+  }
+
+  .right-content-cell{
+    height: 31vh;
+  }
+}

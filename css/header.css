@@ -1,0 +1,56 @@
+
+#menu-bar{
+  position: fixed;
+	width: 50%;
+  margin: 0px;
+  padding: 0px;
+	padding-top: 2vh;
+	background: rgba(22,23,25,1);
+	border-bottom: 0px;
+  cursor: default;
+  z-index: 0;  
+}
+
+.menu-btn{
+  width: 20%;
+	min-width: 80px;
+	height: 5vh;
+	background: rgba(0,0,0,0);
+	color: rgba(106,110,114,1);
+  font-family: 'Roboto';
+  font-size: 1.5vh;
+	/*transition: border-left .35s;*/
+}
+
+.menu-btn-active{
+	color: rgba(193,195,199,1);
+  padding: 0px;
+	background: rgba(39,41,43,1);
+	background: rgba(29,31,33,1);
+	border: 0px solid rgba(17,19,20,1);
+	border-left: 0.3vh solid rgba(81,159,238,1);
+	border-bottom: 0.3vh solid rgba(39,41,43,1);
+  border-bottom: 0.3vh solid rgba(29,31,33,1);
+}
+
+.close-tab-symbol{
+	position: absolute;
+  text-align: right;
+	display: none;
+  margin-top: 0.3vh;
+	z-index: 3;
+}
+
+.close-tab-symbol:hover{
+  color:pink;
+}
+
+#resume{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1026px) {
+  #menu-bar{
+    width: 100%;
+  }
+}
