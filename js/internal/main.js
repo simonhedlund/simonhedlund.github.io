@@ -17,7 +17,7 @@ var Main = (function () {
         switch (id) {
             case "index":
                 this.removeContext();
-                for (var i = 1; i < 13; i++) {
+                for (var i = 1; i < 14; i++) {
                     $("#row-counter").append("<p class='row-count-number'>" + i + "</p> <br>");
                 }
                 $("#code").append("<p class='comment'> /*===============  Simon Hedlund ==================// </p> <br>");
