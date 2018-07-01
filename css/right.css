@@ -51,6 +51,8 @@
 }
 
 
+#cell-raymarcher{background-image: url("../img/raymarcher.jpg");}
+#cell-texmesh{background-image: url("../img/texmesh.jpg");}
 #cell-giveblood{background-image: url("../img/giveblood.jpg");}
 #cell-sphsimulation{background-image: url("../img/vattenoverhuvudet.jpg");}
 #cell-thelake{background-image: url("../img/theLake.jpg");}

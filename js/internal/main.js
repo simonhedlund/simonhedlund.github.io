@@ -6,7 +6,7 @@
   Best Regards, Simon.
 //====================================================*/
 "use strict";
-var Main = (function () {
+var Main = /** @class */ (function () {
     function Main() {
         this._eventListener = new EventListener(this);
         this.setContext("reel");
@@ -17,7 +17,7 @@ var Main = (function () {
         switch (id) {
             case "index":
                 this.removeContext();
-                for (var i = 1; i < 14; i++) {
+                for (var i = 1; i < 13; i++) {
                     $("#row-counter").append("<p class='row-count-number'>" + i + "</p> <br>");
                 }
                 $("#code").append("<p class='comment'> /*===============  Simon Hedlund ==================// </p> <br>");
@@ -33,6 +33,8 @@ var Main = (function () {
                 $("#code").append("<p class='white'>&nbsp&nbspstd::cout << </p> <p class='orange'>&nbsp&quotTip: Use keys 1, 2, 3, 4 to navigate around the page.&#92n&quot </p> <p class='white'>; </p> <br>");
                 $("#code").append("<p class='blue'> &nbsp&nbspreturn </p><p class='white'>&nbsp0;</p><br>");
                 $("#code").append("<p class='white'>} </p> <br>");
+                $("#right-content").append(" <div class='right-content-cell lazy' id='cell-raymarcher' ><input class='inner-cell inner-cell-text' type='button' value='Raymarcher'/></div>");
+                $("#right-content").append(" <div class='right-content-cell lazy' id='cell-texmesh' ><input class='inner-cell inner-cell-text' type='button' value='TexMesh'/></div>");
                 $("#right-content").append(" <div class='right-content-cell lazy' id='cell-giveblood' ><input class='inner-cell inner-cell-text' type='button' value='Give Blood'/></div>");
                 $("#right-content").append(" <div class='right-content-cell lazy' id='cell-sphsimulation' ><input class='inner-cell inner-cell-text' type='button' value='SPH Simulation'></div>");
                 $("#right-content").append(" <div class='right-content-cell lazy' id='cell-thelake' ><input class='inner-cell inner-cell-text' type='button' value='The Lake'></div>");
@@ -114,7 +116,7 @@ var Main = (function () {
                 $("#phone-layer-2").append("<p class='phone-text'> sermonhedlund@gmail.com</p>");
                 break;
             case "resume":
-                window.open('https://drive.google.com/file/d/0B27xknhl0xrNUWIwSXFzYXF2R3c/preview', '_blank');
+                window.open('https://drive.google.com/file/d/1H0Y2uyiW_YpU3RfxhTI8Az8L70XiifiI/preview', '_blank');
                 this.setContext("contact");
                 break;
         }

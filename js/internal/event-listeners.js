@@ -6,7 +6,7 @@
   Best Regards, Simon.
 //====================================================*/
 "use strict";
-var EventListener = (function () {
+var EventListener = /** @class */ (function () {
     function EventListener(iface) {
         var _this = this;
         this.onMouseMove = function (e) {
@@ -32,6 +32,12 @@ var EventListener = (function () {
                     break;
                 case "Save Contact":
                     _this._interface.setContext("contact");
+                    break;
+                case "TexMesh":
+                    window.open('https://vimeo.com/212475647', '_blank');
+                    break;
+                case "Raymarcher":
+                    window.open('https://github.com/Hedlundaren/raymarcher', '_blank');
                     break;
                 case "Give Blood":
                     window.open('https://vimeo.com/204744576', '_blank');
